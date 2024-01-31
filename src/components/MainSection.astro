@@ -1,0 +1,30 @@
+---
+import Container from "./Container.astro";
+---
+
+<section class="relative">
+    <Container class="py-52">
+        <h1 class="text-6xl font-bold text-center">
+            The global collaborative AI plataform
+        </h1>
+        <h2 class="py-12 text-2xl text-center max-w-5xl">
+            Cobalt makes your AI project more accessible by leveraging the
+            computing and data contributions of collaborators
+        </h2>
+    </Container>
+    <div class="half-circle -z-10 dark:bg-blue-700"></div>
+</section>
+<style>
+    section {
+        margin: 0;
+        overflow: hidden;
+    }
+    .half-circle {
+        width: 100vw;
+        height: 100%;
+        border-radius: 0 0 50% 50%; /* Esto crea la forma de semicírculo */
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+</style>

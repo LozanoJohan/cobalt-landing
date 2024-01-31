@@ -1,0 +1,28 @@
+---
+import Container from "./Container.astro";
+import VerticalCard from "./VerticalCard.astro";
+---
+
+<section class="relative pt-28">
+    <Container>
+        <h1 class="text-5xl text-center font-bold">Built with Cobalt</h1>
+        <div class="grid sm:grid-cols-2 gap-5 mt-12">
+            <VerticalCard
+                title="Easy for everyone"
+                description="Whether you're a novice or an AI expert, we provide the resources and collaboration for robust model training."
+            />
+            <VerticalCard
+                title="Powered on web3"
+                description="Cobalt leverages blockchain technology to enhance the accessibility of AI, making data more impactful, and prioritizing trust and security at the core of its operations."
+            />
+            <VerticalCard
+                title="Empowering All AI Domains"
+                description="Cobalt seamlessly integrates chatbots, computer vision, IoT, and is designed to support a wide array of other AI applications, catering to diverse needs and possibilities."
+            />
+            <VerticalCard
+                title="Descentralized"
+                description="Cobalt embraces decentralization, fostering a resilient and collaborative AI ecosystem. By leveraging decentralized architecture, it ensures reliability, inclusivity, and innovation, prioritizing trust across the platform."
+            />
+        </div>
+    </Container>
+</section>

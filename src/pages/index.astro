@@ -4,6 +4,9 @@ import Footer from "../components/Footer.astro";
 import Container from "../components/Container.astro";
 import TrainSection from "../components/TrainSection.astro";
 import CollaborateSection from "../components/CollaborateSection.astro";
+import Card from "../components/HorizontalCard.astro";
+import FeaturesSection from "../components/FeaturesSection.astro";
+import MainSection from "../components/MainSection.astro";
 
 
 ---
@@ -18,25 +21,10 @@ import CollaborateSection from "../components/CollaborateSection.astro";
 	</head>
 	<body class="bg-slate-950 text-white">
 		<Navbar />
-		<Container class="py-52">
-			<h1 class="text-6xl font-bold text-center">The global collaborative AI plataform</h1>
-			<h2 class="py-12 text-2xl text-center">
-				Cobalt makes your AI project more accessible by leveraging the
-				computing and data contributions of collaborators
-			</h2>
-
+			<MainSection/>
 			<TrainSection/>
 			<CollaborateSection/>
-
-			<p>Blockchain</p>
-			<p>
-				We use blockchain to make AI more approachable and data more
-				useful
-			</p>
-			<p>PoUW</p>
-			<p>Smart Contracts | trust and security</p>
-			<p>Descentralization</p>
-		</Container>
+			<FeaturesSection/>
 		<Footer />
 	</body>
 </html>
