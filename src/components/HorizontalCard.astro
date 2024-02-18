@@ -2,15 +2,15 @@
 const {title, description} = Astro.props
 ---
 
-<div class=`flex mt-12 flex-col   items-center sm:grid grid-cols-2 ${Astro.props.bg && "bg-white border border-gray-200 rounded-lg shadow dark:border-gray-700 dark:bg-gray-800 "}`>
+<div class=`flex mt-12 flex-col   items-center sm:grid grid-cols-2 ${Astro.props.bg && " border  rounded-lg shadow border-gray-700 bg-gray-800 "}`>
     <slot name="left"/>
     <div class="flex flex-col  justify-between p-4 leading-normal">
         <h5
-            class="mb-2 text-3xl font-bold tracking-tight text-gray-900 dark:text-white"
+            class="mb-2 text-3xl font-bold tracking-tight  text-white"
         >
             {title}
         </h5>
-        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400 text-lg">
+        <p class="mb-3 font-normal  text-gray-400 text-lg">
             {description}
         </p>
     </div>
